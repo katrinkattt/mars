@@ -9,22 +9,20 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-mars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-mars.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		49FFC29EA0D9AC7EFBA54ED4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		64C75107AB8640E7A21B34B5 /* DosisBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3EBE98A8F81469EA547C514 /* DosisBold.ttf */; };
+		AFADE948D1B748FA98BED2A2 /* DosisExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4076338544840E3A0250FE7 /* DosisExtraBold.ttf */; };
+		DF79F919B1D645DB95AEF5ED /* DosisExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA2171E736B14419874B6BD5 /* DosisExtraLight.ttf */; };
+		CCA62466127A4E5988F4282E /* DosisLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C5CCFD36C29428FAA691420 /* DosisLight.ttf */; };
+		CFC3B1EB97D34B2AAA346D77 /* DosisMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A345052A9844DC5B6B7E967 /* DosisMedium.ttf */; };
+		12140C752AB943BE95BF6B43 /* DosisRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EC00642AB974A3F97DA0B2B /* DosisRegular.ttf */; };
+		68E9275E684A43A7BB68522A /* DosisSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39333EBF858B48AAA91934E4 /* DosisSemiBold.ttf */; };
+		D3359BBDD3EF419B80D92549 /* DosisVariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B9141C2CF854FE0AAA05C15 /* DosisVariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = mars;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mars/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mars/Info.plist; sourceTree = "<group>"; };
@@ -35,6 +33,14 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = mars/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mars/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C3EBE98A8F81469EA547C514 /* DosisBold.ttf */ = {isa = PBXFileReference; name = "DosisBold.ttf"; path = "../src/asset/fonts/DosisBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B4076338544840E3A0250FE7 /* DosisExtraBold.ttf */ = {isa = PBXFileReference; name = "DosisExtraBold.ttf"; path = "../src/asset/fonts/DosisExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA2171E736B14419874B6BD5 /* DosisExtraLight.ttf */ = {isa = PBXFileReference; name = "DosisExtraLight.ttf"; path = "../src/asset/fonts/DosisExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C5CCFD36C29428FAA691420 /* DosisLight.ttf */ = {isa = PBXFileReference; name = "DosisLight.ttf"; path = "../src/asset/fonts/DosisLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A345052A9844DC5B6B7E967 /* DosisMedium.ttf */ = {isa = PBXFileReference; name = "DosisMedium.ttf"; path = "../src/asset/fonts/DosisMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1EC00642AB974A3F97DA0B2B /* DosisRegular.ttf */ = {isa = PBXFileReference; name = "DosisRegular.ttf"; path = "../src/asset/fonts/DosisRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39333EBF858B48AAA91934E4 /* DosisSemiBold.ttf */ = {isa = PBXFileReference; name = "DosisSemiBold.ttf"; path = "../src/asset/fonts/DosisSemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B9141C2CF854FE0AAA05C15 /* DosisVariableFont_wght.ttf */ = {isa = PBXFileReference; name = "DosisVariableFont_wght.ttf"; path = "../src/asset/fonts/DosisVariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,14 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* mars */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +91,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				AD7CCC402F584046BF5DF478 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +114,22 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		AD7CCC402F584046BF5DF478 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C3EBE98A8F81469EA547C514 /* DosisBold.ttf */,
+				B4076338544840E3A0250FE7 /* DosisExtraBold.ttf */,
+				AA2171E736B14419874B6BD5 /* DosisExtraLight.ttf */,
+				5C5CCFD36C29428FAA691420 /* DosisLight.ttf */,
+				2A345052A9844DC5B6B7E967 /* DosisMedium.ttf */,
+				1EC00642AB974A3F97DA0B2B /* DosisRegular.ttf */,
+				39333EBF858B48AAA91934E4 /* DosisSemiBold.ttf */,
+				0B9141C2CF854FE0AAA05C15 /* DosisVariableFont_wght.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -172,19 +187,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				49FFC29EA0D9AC7EFBA54ED4 /* PrivacyInfo.xcprivacy in Resources */,
+				64C75107AB8640E7A21B34B5 /* DosisBold.ttf in Resources */,
+				AFADE948D1B748FA98BED2A2 /* DosisExtraBold.ttf in Resources */,
+				DF79F919B1D645DB95AEF5ED /* DosisExtraLight.ttf in Resources */,
+				CCA62466127A4E5988F4282E /* DosisLight.ttf in Resources */,
+				CFC3B1EB97D34B2AAA346D77 /* DosisMedium.ttf in Resources */,
+				12140C752AB943BE95BF6B43 /* DosisRegular.ttf in Resources */,
+				68E9275E684A43A7BB68522A /* DosisSemiBold.ttf in Resources */,
+				D3359BBDD3EF419B80D92549 /* DosisVariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +293,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* mars */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -292,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLXM8B4P36;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = mars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -320,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLXM8B4P36;
 				INFOPLIST_FILE = mars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,7 +419,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -473,7 +491,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

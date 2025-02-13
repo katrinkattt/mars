@@ -1,88 +1,77 @@
-import React, { useRef, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Platform } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import { Colors, ScreenHeight, ScreenWidth } from '../asset/Colors';
+import React, { useState, memo, useContext } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from "@react-navigation/native";
+import { CameraObj } from '../typees/types';
+import { Colors, ScreenHeight } from '../assets/Colors'
+import { MainContainer } from '../components/MainContainer';
+import DropdownSelect from '../components/DropdownSelect';
+import DatePicker from '../components/DatePiker';
+import { APP_CONTEXT, AppContext } from '../context';
+import moment from 'moment';
 
-export default function MainMarsExplorer() {
-    const [selectedCamera, setSelectedCamera] = useState('Front Hazard Avoidance Camera');
-    const [date, setDate] = useState(new Date(2021, 9, 18));
-    const [showDatePicker, setShowDatePicker] = useState(false);
-    const pickerRef = useRef();
+const CameraArray: CameraObj[] = [
+    { id: 'FHAZ', name: 'Front Hazard Avoidance Camera' },
+    { id: 'RHAZ', name: 'Rear Hazard Avoidance Camera' },
+    { id: 'MAST', name: 'Mast Camera' },
+    { id: 'CHEMCAM', name: 'Chemistry and Camera Complex' },
+    { id: 'MAHLI', name: 'Mars Hand Lens Imager' },
+    { id: 'MARDI', name: 'Mars Descent Imager' },
+    { id: 'NAVCAM', name: 'Navigation Camera' },
+    { id: 'PANCAM', name: 'Panoramic Camera' },
+    { id: 'MINITES', name: 'Miniature Thermal Emission Spectrometer' }
+]
 
-    const handleDateChange = (event: any, selectedDate: Date | any) => {
-        const currentDate = selectedDate || date;
-        setShowDatePicker(Platform.OS === 'ios');
-        setDate(currentDate);
-    };
+const MainMarsExplorer: React.FC = () => {
+    const [selectedCamera, setSelectedCamera] = useState<CameraObj>(CameraArray[0])
+    const [date, setDate] = useState<Date | any>(new Date())
+    const navigation = useNavigation()
 
     return (
-        <View style={styles.container}>
+        <MainContainer>
             <Text style={styles.title}>Select Camera and Date</Text>
             <View style={{ zIndex: 5, height: ScreenHeight * 0.7, justifyContent: 'center' }}>
+                <Text style={styles.label}>Rover Camera</Text>
+                <DropdownSelect
+                    selected={selectedCamera}
+                    data={CameraArray}
+                    setSelected={(select) => setSelectedCamera(select)}
+                />
+                <Text style={styles.label}>Date</Text>
+                <DatePicker date={date} setDate={(date) => setDate(date)} />
 
-                <TouchableOpacity style={styles.exploreButton}>
+                <TouchableOpacity
+                    //@ts-ignore
+                    onPress={() => navigation.navigate('FotoGalleryScreen',
+                        {
+                            data: {
+                                date: moment(date).format('YYYY-MM-DD'),
+                                camera: selectedCamera
+                            }
+                        })
+                    }
+                    style={styles.exploreButton}
+                >
                     <Text style={styles.exploreButtonText}>Explore</Text>
                 </TouchableOpacity>
             </View>
-            <View style={{
-                position: "absolute",
-                bottom: -90,
-                left: 0,
-                right: 0,
-            }}>
-                <Image source={require('./../asset/images/curiosity.png')} style={styles.roverImage} resizeMode="contain" />
-
-            </View>
-        </View>
+        </MainContainer >
     );
 }
+export default memo(MainMarsExplorer)
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: Colors.light.background,
-        padding: 20,
-        justifyContent: 'center',
-    },
     title: {
         fontSize: 22,
-        fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: 40,
         color: '#000',
+        fontFamily: 'Dosis-Medium'
     },
     label: {
         fontSize: 16,
         marginBottom: 8,
         color: '#000',
-    },
-    pickerContainer: {
-        backgroundColor: '#ffffff',
-        borderRadius: 10,
-        marginBottom: 20,
-        paddingHorizontal: 10,
-    },
-    picker: {
-        height: 50,
-        color: '#000',
-    },
-    dateInput: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: '#ffffff',
-        padding: 15,
-        borderRadius: 10,
-        marginBottom: 20,
-    },
-    dateText: {
-        fontSize: 16,
-        color: '#000',
-    },
-    calendarIcon: {
-        fontSize: 20,
-        color: '#000',
+        fontFamily: 'Dosis-Light'
     },
     exploreButton: {
         backgroundColor: Colors.light.icon,
@@ -99,12 +88,6 @@ const styles = StyleSheet.create({
     exploreButtonText: {
         color: '#fff',
         fontSize: 18,
-        fontWeight: 'bold',
-    },
-    roverImage: {
-        width: ScreenWidth,
-        // height: 200,
-        zIndex: 1,
-        alignSelf: 'center',
+        fontFamily: 'Dosis-SemiBold'
     },
 });

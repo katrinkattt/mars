@@ -2,7 +2,7 @@ export interface MarsPhoto {
   id: number;
   sol: number;
   camera: {
-    id: 'FHAZ' | 'RHAZ' | 'MAST' | 'CHEMCAM' | 'MAHLI' | 'MARDI' | 'NAVCAM' | 'PANCAM' |'MINITES';
+    id: CameraId;
     name: string;
     rover_id: number;
     full_name: string;
@@ -18,14 +18,9 @@ export interface MarsPhoto {
     status: string;
   };
 }
-export const cameraNames ={
-  FHAZ:	'Front Hazard Avoidance Camera',
-  RHAZ:	'Rear Hazard Avoidance Camera',
-  MAST:	'Mast Camera',
-  CHEMCAM:	'Chemistry and Camera Complex',
-  MAHLI:	'Mars Hand Lens Imager',
-  MARDI:	'Mars Descent Imager',		
-  NAVCAM:	'Navigation Camera',
-  PANCAM:	'Panoramic Camera',
-  MINITES:	'Miniature Thermal Emission Spectrometer'
+export type CameraId = 'FHAZ' | 'RHAZ' | 'MAST' | 'CHEMCAM' | 'MAHLI' | 'MARDI' | 'NAVCAM' | 'PANCAM' | 'MINITES'
+
+export type CameraObj = {
+  id: CameraId,
+  name: string,
 }

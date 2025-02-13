@@ -10,7 +10,7 @@ const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#000000ff',
+    text: '#000000',
     background: '#dccebeff',
     tint: tintColorLight,
     icon: '#bf2e0eff',
@@ -25,6 +25,10 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
   },
+  main: {
+    white: '#fff',
+    accent: '#bf2e0eff',
+  }
 };
 export const ScreenHeight = Dimensions.get("window").height;
 export const ScreenWidth = Dimensions.get("window").width;

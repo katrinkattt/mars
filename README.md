@@ -119,5 +119,20 @@ example of incoming data =[
         }
     },
 ]
+screens:
+main/home
+<img width="364" alt="Снимок экрана 2025-02-14 в 00 13 49" src="https://github.com/user-attachments/assets/dac76cf7-92b6-4116-a17e-3f4591209c9a" />
+
+galery
+<img width="360" alt="Снимок экрана 2025-02-14 в 00 13 38" src="https://github.com/user-attachments/assets/28d5f2ae-004b-4fee-9d6a-a401a49cd0de" />
+
+preview
+<img width="369" alt="Снимок экрана 2025-02-14 в 00 32 36" src="https://github.com/user-attachments/assets/60b418d6-2e0a-47e9-916c-2a0c11bf0594" />
+
+
+общее: писать стор под такой маленькиий проект не имеет смыла,  поэтому его нет(есть шаблон но он не используется)
+
+дисклеймер: при частом запросе ключ перестает работать(ограничение обращений в день с 1 ip)
+
 
 
